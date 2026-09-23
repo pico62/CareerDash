@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Application - CareerDash</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <a href="/" class="back-link">← Back to Dashboard</a>
+
+        <h1>Add Application</h1>
+        <p class="subtitle">Add a job application to your CareerDash.</p>
+
+        <form method="POST" class="application-form">
+
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="position">Position</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="Applied">Applied</option>
+                <option value="Interview">Interview</option>
+                <option value="Offer">Offer</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+
+            <label for="date_applied">Date Applied</label>
+            <input type="date" id="date_applied" name="date_applied" required>
+
+            <button type="submit" class="save-button">
+                Save Application
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

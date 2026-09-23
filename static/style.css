@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 25px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-size: 36px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-button {
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background-color: #2563eb;
+}
+
+.application-card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.application-card h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.application-card p {
+    margin: 6px 0;
+    color: #cbd5e1;
+}
+.application-form {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+    max-width: 600px;
+}
+
+.application-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.application-form input,
+.application-form select {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+.save-button {
+    margin-top: 25px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #2563eb;
+}
+
+.back-link {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.edit-button {
+    display: inline-block;
+    margin-top: 12px;
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-button:hover {
+    text-decoration: underline;
+}
+.status-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.status-badge.applied {
+    background-color: #2563eb;
+    color: white;
+}
+
+.status-badge.interview {
+    background-color: #f59e0b;
+    color: white;
+}
+
+.status-badge.offer {
+    background-color: #16a34a;
+    color: white;
+}
+
+.status-badge.rejected {
+    background-color: #dc2626;
+    color: white;
+}
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.stat-card p {
+    margin: 5px 0 0;
+    color: #94a3b8;
+}
+/* Search and Filter */
+
+.filter-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.filter-form input {
+    flex: 1;
+    padding: 10px 12px;
+    background-color: #1e293b;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.filter-form input::placeholder {
+    color: #94a3b8;
+}
+
+.filter-form select {
+    padding: 10px 12px;
+    background-color: #1e293b;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+}
+
+.filter-form button {
+    padding: 10px 18px;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filter-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.clear-button {
+    padding: 10px 16px;
+    background-color: #334155;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.clear-button:hover {
+    background-color: #475569;
+}
+/* Edit and Delete Buttons */
+
+.edit-button {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 6px;
+}
+
+.edit-button:hover {
+    background-color: #1d4ed8;
+}
+
+.delete-button {
+    padding: 7px 14px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #b91c1c;
+}
