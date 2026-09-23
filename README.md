@@ -6,6 +6,10 @@ I came up with the idea because I've been applying to a lot of internships and I
 
 This project has also been a way for me to get more hands-on experience with Python, databases, and web development.
 
+## CareerDash Dashboard
+
+![CareerDash Dashboard](images/careerdash-dashboard.png)
+
 ## What It Does
 
 Right now, CareerDash allows me to:
