@@ -8,7 +8,7 @@ This project has also been a way for me to get more hands-on experience with Pyt
 
 ## CareerDash Dashboard
 
-![CareerDash Dashboard](images/careerdash-dashboard.png)
+![CareerDash Dashboard](images/CareerDash-Dashboard.png)
 
 ## What It Does
 
